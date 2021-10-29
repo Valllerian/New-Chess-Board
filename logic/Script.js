@@ -29,7 +29,7 @@ export default class Board{
             // files are columns
             const fileNum = index % 8;
             const file = files[fileNum];
-            const isOdd = (rank % 2 ===  fileNum % 2);
+            const isOdd = !(rank % 2 ===  fileNum % 2);
             const cell =  new Square({
                 isOdd,
                 rank, 
