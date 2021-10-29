@@ -6,8 +6,8 @@
     grid-template-rows: repeat(8, 1fr);
 }
 
-.square:nth-child(odd){
-    background: grey;
+.square.odd {
+    background: gray;
 }
 
 .square {

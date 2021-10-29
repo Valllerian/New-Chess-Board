@@ -27,8 +27,11 @@ export default class Board{
             // ranks are rows
             const rank = 8 - (Math.floor(index / 8));
             // files are columns
-            const file = files[index % 8];
+            const fileNum = index % 8;
+            const file = files[fileNum];
+            const isOdd = (rank % 2 ===  fileNum % 2);
             const cell =  new Square({
+                isOdd,
                 rank, 
                 file,
             })
