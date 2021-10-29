@@ -4,7 +4,7 @@
     /* make 8 squares in a row\column */
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    transform: perspective(90em) rotateX(60deg);
+    /* transform: perspective(90em) rotateX(60deg); */
 }
 
 

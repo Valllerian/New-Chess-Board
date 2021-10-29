@@ -1,5 +1,8 @@
+import { Chess } from 'https://cdn.skypack.dev/chess.js'
 
 import Square from "./Square.js";
+
+
 
 const files = ['A', 'B', 'C','D', 'E', 'F','G', 'H'];
 
@@ -23,7 +26,9 @@ export default class Board{
             this.element.style.width = size;
             this.element.style.height = size;
         }
-        this.cells = Array.from({length: 64}, (_, index) =>{
+            this.chess = new Chess();
+            this.board = this.chess.board().flat();
+            this.cells = Array.from({length: 64}, (_, index) =>{
             // ranks are rows
             const rank = 8 - (Math.floor(index / 8));
             // files are columns
@@ -34,9 +39,17 @@ export default class Board{
                 isOdd,
                 rank, 
                 file,
+                index
             })
             this.element.appendChild(cell.element);
             return cell;
         });
+        
+        // flat is an array method with a parameter "depth"
+        // method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+        // console.log(this.chess.board().flat());
     }
+    getSquare(index){
+        return this.board[index];
+        }
 }
