@@ -1,11 +1,15 @@
 .board{
-    border:2px solid black;
+    border:5px solid black;
     display: grid;
     /* make 8 squares in a row\column */
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
 }
 
-.square {
+.square:nth-child(odd){
     background: grey;
+}
+
+.square {
+    border: black solid 1px;
 }

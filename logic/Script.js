@@ -25,7 +25,7 @@ export default class Board{
         }
         this.cells = Array.from({length: 64}, (_, index) =>{
             // ranks are rows
-            const rank = Math.ceil(index / 8);
+            const rank = 8 - (Math.floor(index / 8));
             // files are columns
             const file = files[index % 8];
             const cell =  new Square({
