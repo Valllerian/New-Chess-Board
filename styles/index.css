@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    /* because it is a flex-row just-c will center in horizontally and a-i will do it vertically */
+    justify-content: center;
+    align-items: center;
+}
