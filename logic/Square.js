@@ -7,6 +7,7 @@ export default class Square {
         if (isOdd){
             this.element.classList.add('odd');
         }
+        this.element.textContent = `${file}${rank}`
         this.element.setAttribute(`data-rank`, rank);
         this.element.setAttribute(`data-file`, file);
     }

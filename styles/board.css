@@ -8,8 +8,10 @@
 
 .square.odd {
     background: gray;
+    color: honeydew;
 }
 
 .square {
     border: black solid 1px;
+    font-size: 2vmin;
 }
