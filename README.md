@@ -19,6 +19,7 @@ A chessboard generated on the page using JavaScript logic.
     
 - Clone the repo to the working directory | `gh repo clone Valllerian/new-Chess-Board`;
 - Enter working directory;
+- Make sure lite-server is installed | `npm i lite-server`
 - Run the code on lite-server | `npx lite-server`
     
 ## Usage 
