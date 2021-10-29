@@ -5,15 +5,27 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr);
     /* transform: perspective(90em) rotateX(60deg); */
+    
 }
-
 
 .square.odd {
     background: gray;
     color: honeydew;
+    
+  
 }
 
 .square {
     border: black solid 1px;
     font-size: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.square img {
+    width: 90%;
+    height: 90%;
 }

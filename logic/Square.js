@@ -1,4 +1,4 @@
-import Board from  "./Script.js"
+import Pieces from  "./pieces.js"
 
 export default class Square {
     constructor({board, rank, file, isOdd, index}){
@@ -20,8 +20,18 @@ export default class Square {
     update(){
         // displaying pieces in initial squares;
         const current = this.board.getSquare(this.index);
+        
        if(current){
-        this.element.textContent = current.type;
+           const imageUrl = Pieces[`${current.color}${current.type}`];
+        //    if image is available - display;
+           if(imageUrl){
+               const image = document.createElement('img');
+               image.src = imageUrl;
+               this.element.textContent = '';
+               this.element.append(image);
+           }else{
+               this.element.textContent = current.type;
+           }
        }else {
         this.element.textContent = '';
        };
