@@ -6,6 +6,11 @@
 A chessboard generated on the page using JavaScript logic.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Last update => Pieces are generated on the board from :
+https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces
+
+![Board Image](./images/piecesPlaces.jpg)
     
 ## Table of Contents
 - [Installation](#installation)
