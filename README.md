@@ -19,6 +19,7 @@ https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [Resources](#resources)
     
 ## Installation
     
@@ -64,3 +65,13 @@ N\A
 
 - Follow my code: https://github.com/valllerian;
     
+
+## Resources: 
+
+- Main tutorial is available at:
+
+https://www.youtube.com/watch?v=leEoZZX1p94&list=PLM_i0obccy3vuT-6vLWbFXuEkHcyid4DM&index=7;
+
+- Chess pieces are fetched from: 
+
+https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces;
