@@ -10,7 +10,7 @@ A chessboard generated on the page using JavaScript logic.
 Last update => Pieces are generated on the board from :
 https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces
 
-![Board Image](./images/piecesPlaces.jpg)
+![Board Image](images\piecesPlaced.jpg)
     
 ## Table of Contents
 - [Installation](#installation)
