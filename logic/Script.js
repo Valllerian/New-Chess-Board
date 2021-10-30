@@ -2,9 +2,9 @@ import { Chess } from 'https://cdn.skypack.dev/chess.js'
 
 import Square from "./Square.js";
 
-
-
 const files = ['A', 'B', 'C','D', 'E', 'F','G', 'H'];
+
+
 
 export default class Board{
     // if we pass in the selector id = board it will automatically generate itself;
@@ -25,7 +25,6 @@ export default class Board{
             const size =  `90vmin`;
             this.element.style.width = size;
             this.element.style.height = size;
-            
         }
         // flat is an array method with a parameter "depth"
         // method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.

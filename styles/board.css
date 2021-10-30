@@ -8,6 +8,11 @@
     
 }
 
+.board:hover{
+    transition: transform 1s;
+    transform: scale(1.025)
+}
+
 .square.odd {
     background: gray;
     color: honeydew;
@@ -24,7 +29,6 @@
 
 .square img {
     width: 90%;
-    
 }
 
 /* adding labels for bottom rank A - H and styling it */
