@@ -11,7 +11,7 @@ export default class Square {
         if (isOdd){
             this.element.classList.add('odd');
         }
-        this.element.textContent = `${file}${rank}`
+        
         this.element.setAttribute(`data-rank`, rank);
         this.element.setAttribute(`data-file`, file);
         this.update();
@@ -27,14 +27,12 @@ export default class Square {
            if(imageUrl){
                const image = document.createElement('img');
                image.src = imageUrl;
-               this.element.textContent = '';
+              
                this.element.append(image);
            }else{
                this.element.textContent = current.type;
            }
-       }else {
-        this.element.textContent = '';
-       };
+       }
        
     }
 }
